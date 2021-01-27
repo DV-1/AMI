@@ -342,7 +342,7 @@ header{
 }
 @keyframes click_at_me {
     from{opacity: .1}
-    to{opacity: .5}
+    to{opacity: .3}
 }
 .project_text_box{
     width: 100%;
@@ -383,7 +383,7 @@ header{
 .project_text p{
     line-height: 150%;
     font-size: 16px;
-    text-shadow: 1px 1px 0px #ededed;
+    text-shadow: 0px 0px 1px #ededed;
 }
 .all_projects{
     width: 90%;
