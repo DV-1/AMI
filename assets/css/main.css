@@ -383,7 +383,7 @@ header{
 .project_text p{
     line-height: 150%;
     font-size: 16px;
-    text-shadow: 0px 0px 1px #ededed;
+    text-shadow: 0px 0px 1px whitesmoke;
 }
 .all_projects{
     width: 90%;
