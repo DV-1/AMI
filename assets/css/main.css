@@ -323,6 +323,27 @@ header{
     position: relative;
     margin: 0 0 106px 0;
 }
+.project_box:after {
+    content: "click at me";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 4px;
+
+    animation: click_at_me 2s ease-out infinite alternate;
+}
+@keyframes click_at_me {
+    from{opacity: .1}
+    to{opacity: .5}
+}
 .project_text_box{
     width: 100%;
     height: 100%;
@@ -362,6 +383,7 @@ header{
 .project_text p{
     line-height: 150%;
     font-size: 16px;
+    text-shadow: 1px 1px 0px #ededed;
 }
 .all_projects{
     width: 90%;
