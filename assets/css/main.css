@@ -641,6 +641,9 @@ header{
 
 /*---------- media ----------*/
 @media (max-width: 769px){
+    .height{
+        height: 60vh;
+    }
     /*---------- media header ----------*/
     .content {
         justify-content: flex-end;
