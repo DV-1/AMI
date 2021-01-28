@@ -609,6 +609,11 @@ header{
     font-size: 14px;
     text-decoration: none;
     margin: 5px 0;
+
+    transition: color .2s linear;
+}
+.column a:hover{
+    color: whitesmoke;
 }
 .search_form{
     display: flex;
