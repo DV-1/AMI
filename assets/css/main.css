@@ -324,7 +324,7 @@ header{
     margin: 0 0 106px 0;
 }
 .project_box:after {
-    content: "click at me";
+    content: "";
     position: absolute;
     left: 0;
     top: 0;
@@ -820,6 +820,9 @@ header{
     }
     .big_project_box{
         margin: 0 0 200px 0;
+    }
+    .project_box:after {
+        content: "Click at me";
     }
 
     /*---------- media section 6 questions ----------*/
