@@ -5,7 +5,7 @@ body{
     padding: 0;
     font-family: Roboto, sans-serif;
 
-    animation: loading 1s ease-out;
+    animation: loading 1s ease-out forwards;
 }
 p, h1, h2, h3{
     margin: 0;
@@ -21,9 +21,7 @@ p, h1, h2, h3{
 }
 
 @keyframes loading {
-    from{
-        opacity: .2;
-    }
+    from{ opacity: .2; }
     to{
         opacity: 1;
     }
@@ -401,10 +399,11 @@ header{
     letter-spacing: 1px;
     margin: 0 5px 0 0;
 
-    transition: color .2s ease-out;
+    transition: all .2s ease-out;
 }
 .all_projects a:hover{
     color: #DC911B;
+    transform: scale(1.1);
 }
 .right_arrow{
     width: 10px;
