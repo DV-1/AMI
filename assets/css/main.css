@@ -217,7 +217,7 @@ header{
 
     transition: all .4s ease-out;
 }
-.btm_idle::after {
+.btm_idle::after{
     content: "";
     position: absolute;
     top: 0;
@@ -329,11 +329,11 @@ header{
     left: 0;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 52%;
     color: black;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     text-transform: uppercase;
     font-size: 20px;
     letter-spacing: 4px;
@@ -342,7 +342,7 @@ header{
 }
 @keyframes click_at_me {
     from{opacity: .1}
-    to{opacity: .3}
+    to{opacity: .5}
 }
 .project_text_box{
     width: 100%;
@@ -383,7 +383,7 @@ header{
 .project_text p{
     line-height: 150%;
     font-size: 16px;
-    text-shadow: 0px 0px 1px whitesmoke;
+    text-shadow: 0 0 1px whitesmoke;
 }
 .all_projects{
     width: 90%;
@@ -654,12 +654,14 @@ header{
     padding: 0 0 0 11px;
 }
 .btm_call{
+    position: relative;
     background: #FD9913;
     color: white;
     padding: 15px 0;
     font-size: 15px;
     border-radius: 8px;
     border: none;
+    outline: none;
 }
 .lower_footer{
     display: flex;
@@ -674,6 +676,21 @@ header{
 }
 
 /*---------- media ----------*/
+@media (max-width: 1439px) {
+    /*---------- media section 3 customer reviews----------*/
+    .review_man {
+        width: auto;
+        right: 0px;
+        top: 15%;
+    }
+}
+@media (max-width: 1025px) {
+    /*---------- media section 3 customer reviews----------*/
+    .review_man{
+        top: 18%;
+        height: 70%;
+    }
+}
 @media (max-width: 769px){
     .height{
         height: 60vh;
@@ -698,6 +715,7 @@ header{
         background: #ffffffeb;
         z-index: 1;
         padding: 0;
+        visibility: collapse;
     }
     .link_box{
         display: flex;
@@ -718,6 +736,7 @@ header{
     .open_menu{
         width: 100%;
         opacity: 1;
+        visibility: visible;
     }
 
     /*---------- media section 2 our services----------*/
@@ -742,6 +761,7 @@ header{
         width: 100%;
         left: 0;
         top: 10%;
+        height: auto;
     }
 
     /*---------- media section 4 projects ----------*/
@@ -758,7 +778,7 @@ header{
         display: flex;
         flex-direction: column;
         opacity: 1;
-        height: auto;
+        height: 460px;
     }
     .project_text{
         width: 80%;
@@ -771,6 +791,9 @@ header{
     }
     .small_image{
         width: 40%;
+    }
+    .big_project_box{
+        margin: 0 0 200px 0;
     }
 
     /*---------- media section 6 questions ----------*/
@@ -836,7 +859,6 @@ header{
         padding: 20px 0 0 0;
     }
 }
-
 @media (max-width: 426px) {
 
 
@@ -861,6 +883,11 @@ header{
     }
     .view_all{
         position: static;
+    }
+
+    /*---------- media section 4 projects ----------*/
+    .info_opacity{
+        height: 350px;
     }
 
     /*---------- media section 5 news ----------*/
@@ -905,6 +932,12 @@ header{
     }
 
     /*---------- media section 8 certificates ----------*/
+    .review {
+        margin: 90px 0 65px 0;
+    }
+    .customer_reviews, .certificates {
+        margin: 0 0 50px 0;
+    }
 
     /*---------- media section 9 company ----------*/
     .our_customers{
