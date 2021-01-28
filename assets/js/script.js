@@ -58,8 +58,12 @@ function menu(){
 function info_image_1(){
     document.getElementById("project_text_box_1").classList.toggle("info_opacity");
     document.getElementById('project_img_1').classList.toggle('small_image');
+    var project_box = document.getElementsByClassName('project_box');
+        project_box[0].classList.toggle('big_project_box');
 }
 function info_image_2(){
     document.getElementById("project_text_box_2").classList.toggle("info_opacity");
     document.getElementById('project_img_2').classList.toggle('small_image');
+    var project_box = document.getElementsByClassName('project_box');
+        project_box[1].classList.toggle('big_project_box');
 }
