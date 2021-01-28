@@ -400,6 +400,11 @@ header{
     font-size: 18px;
     letter-spacing: 1px;
     margin: 0 5px 0 0;
+
+    transition: color .2s ease-out;
+}
+.all_projects a:hover{
+    color: #DC911B;
 }
 .right_arrow{
     width: 10px;
@@ -423,23 +428,27 @@ header{
 }
 
 /*---------- section 5 news ----------*/
+.section_back_light{
+    background: #EDEEEF;
+}
 .news_content{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .new_box{
     display: flex;
     align-items: flex-start;
     justify-content: space-around;
     flex-wrap: wrap;
-    background: #EDEEEF;
+    background: white;
     width: 50%;
     min-width: 360px;
 }
-.new_box:last-child{
-    background: none;
+.new_box:first-child{
+    background: #EDEEEF;
 }
 .important_new{
     line-height: 120%;
@@ -467,8 +476,17 @@ header{
 .new img{
     margin-top: 30px;
 }
-
+.all_news{
+    position: absolute;
+    bottom: 0;
+    margin: 53px auto;
+}
 /*---------- section 6 questions ----------*/
+.questions_line{
+    background: url(../images/line.jpg) no-repeat;
+    background-size: 100%;
+    background-position-y: 35%;
+}
 .questions_box{
     position: relative;
     height: 600px;
@@ -537,7 +555,7 @@ header{
 }
 .articles{
     width: 90%;
-    margin: 90px auto 170px auto;
+    margin: 90px auto 60px auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -561,6 +579,9 @@ header{
 .article_box p{
     font-size: 12px;
     line-height: 150%;
+}
+.all_articles{
+    width: 94%;
 }
 
 /*---------- section 8 certificates ----------*/
