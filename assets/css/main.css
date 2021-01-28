@@ -691,7 +691,6 @@ header{
     font-size: 15px;
     border-radius: 8px;
     border: none;
-    outline: none;
 }
 .lower_footer{
     display: flex;
