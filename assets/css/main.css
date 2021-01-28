@@ -274,14 +274,18 @@ header{
     padding: 5px 10px;
     background: #C4C4C4;
     border: none;
+    transition: all .2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     transition: all .2s ease-out;
 }
 .btm_left:hover, .btm_right:hover{
     background: #DC911B;
 }
-.btm_left{
-    transform: rotate(180deg);
+.btm_left .right_arrow{
+    transform: rotate(225deg);
 }
 .review_man{
     position: absolute;
@@ -418,6 +422,7 @@ header{
 }
 .btm_right_orange{
     background: #DC911B;
+    display: block;
 
     transition: all .3s ease-out;
 }
